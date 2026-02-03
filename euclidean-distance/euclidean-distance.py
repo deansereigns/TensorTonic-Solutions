@@ -9,5 +9,7 @@ def euclidean_distance(x, y):
     x = np.array(x,dtype=float)
     y = np.array(y,dtype=float)
 
-    return float((np.sum((x-y)*(x-y))) ** 0.5)
+    # return float((np.sum((x-y)*(x-y))) ** 0.5)
+
+    return np.linalg.norm(x-y)
     pass

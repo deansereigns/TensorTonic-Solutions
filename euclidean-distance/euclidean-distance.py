@@ -11,5 +11,6 @@ def euclidean_distance(x, y):
 
     # return float((np.sum((x-y)*(x-y))) ** 0.5)
 
-    return np.linalg.norm(x-y)
+    # return np.linalg.norm(x-y)
+    return np.sqrt(np.dot(x-y,x-y))
     pass
